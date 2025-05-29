@@ -21,3 +21,10 @@
     <TodoItem todo={args.todo} />
   {/snippet}
 </Story>
+
+<Story name="Completed" args={{ todo: { id: 1, text: 'Learn Svelte', completed: true } }}>
+  {#snippet template(args)}
+    <!-- Pass the todo prop explicitly -->
+    <TodoItem todo={args.todo} />
+  {/snippet}
+</Story>
