@@ -21,3 +21,9 @@
     <TodoItem todo={args.todo} />
   {/snippet}
 </Story>
+
+<Story name="Completed" args={{ todo: { id: 2, text: 'Learn Svelte', completed: true } }}>
+  {#snippet template(args)}
+    <TodoItem todo={args.todo} />
+  {/snippet}
+</Story>
