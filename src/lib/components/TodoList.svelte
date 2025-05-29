@@ -1,5 +1,5 @@
 <script lang="ts">
-  import AddTodo from './AddTodo.svelte';
+  import AddTodo from './ui/AddTodo.svelte';
   import TodoItem from './TodoItem.svelte';
   import { onMount } from 'svelte';
 

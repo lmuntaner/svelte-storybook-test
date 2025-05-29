@@ -1,6 +1,6 @@
 <script module>
   import { defineMeta } from '@storybook/addon-svelte-csf';
-  import TodoItem from '../components/TodoItem.svelte';
+  import TodoItem from '../lib/components/TodoItem.svelte';
 
   const { Story } = defineMeta({
     title: 'Atoms/TodoItem',
