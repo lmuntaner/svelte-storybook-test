@@ -21,3 +21,27 @@
     <TodoItem todo={args.todo} />
   {/snippet}
 </Story>
+
+<Story name="Completed" args={{
+  todo: {
+    id: 2,
+    text: 'Learn Svelte',
+    completed: true,
+  },
+}}>
+  {#snippet template(args)}
+    <TodoItem todo={args.todo} />
+  {/snippet}
+</Story>
+
+<Story name="Long Text" args={{
+  todo: {
+    id: 3,
+    text: 'This is a very long todo item text that demonstrates how the component handles longer content and ensures proper wrapping',
+    completed: false,
+  },
+}}>
+  {#snippet template(args)}
+    <TodoItem todo={args.todo} />
+  {/snippet}
+</Story>
