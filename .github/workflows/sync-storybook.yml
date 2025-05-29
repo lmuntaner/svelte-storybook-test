@@ -1,0 +1,24 @@
+name: Sync Storybook
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  claude-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Claude Code Action
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          direct_prompt: |
+            Keep the stories in the storybook exahustive of their state.
+            Check that the components in the storybook cover all their possible states.
