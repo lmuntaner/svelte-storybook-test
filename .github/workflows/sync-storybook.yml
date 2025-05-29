@@ -19,6 +19,7 @@ jobs:
       - name: Run Claude Code Action
         uses: anthropics/claude-code-action@beta
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           direct_prompt: |
             Keep the stories in the storybook exahustive of their state.
