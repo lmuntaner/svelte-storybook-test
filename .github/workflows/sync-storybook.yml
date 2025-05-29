@@ -24,3 +24,4 @@ jobs:
           direct_prompt: |
             Keep the stories in the storybook exahustive of their state.
             Check that the components in the storybook cover all their possible states.
+            Create a PR if you see any missing stories or states.
