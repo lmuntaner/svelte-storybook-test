@@ -1,12 +1,13 @@
 name: Sync Storybook
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
 
 jobs:
-  claude-pr:
+  sync-storybook-with-claude-code:
     runs-on: ubuntu-latest
     permissions:
       contents: write
