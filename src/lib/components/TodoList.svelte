@@ -1,6 +1,6 @@
 <script lang="ts">
-  import AddTodo from './ui/AddTodo.svelte';
-  import TodoItem from './TodoItem.svelte';
+  import AddTodo from './AddTodo.svelte';
+  import TodoItem from './ui/TodoItem.svelte';
   import { onMount } from 'svelte';
 
   interface Todo {
